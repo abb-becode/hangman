@@ -1,12 +1,12 @@
 # hangman
 JAVASCRIPT HANGMAN GAME 
 
-## General informations: 
+## General informations 
   > Title       : hangman game    
   > Description : a small application to play hangman   
   > Flowchart   : [flowchart](flowchart.jpg)   
   
-## start game:
+## start game
   > You don't need any prerequisites to launch the application. have fun. 
 
 ## Author
