@@ -2,7 +2,7 @@
 JAVASCRIPT HANGMAN GAME 
 
 ## General informations: 
-  Title       : hangman game
+  Title       : hangman game    
   Description : a small application to play hangman 
 
 ## start game:
