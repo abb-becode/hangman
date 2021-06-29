@@ -153,16 +153,16 @@ window.onload = () => {
         Desactivate.showMissingLetters(); //show missing letters in another color in the result
         Loser.smiley();
       }
-      for (var i = 0; i < guesses.length; i++) {
-        if (counter + space === guesses.length) {
-          //congratulations
-          showLives.innerHTML = "Congratulations, you win";   //you win
-          showLives.setAttribute("class","win");
-          Desactivate.buttons();   //desactivate all letters
-          Winner.winColor();       //color all letters with green color
-          Winner.smiley();
-        }
+      //for (var i = 0; i < guesses.length; i++) {
+      if (counter + space === guesses.length) {
+        //congratulations
+        showLives.innerHTML = "Congratulations, you win";   //you win
+        showLives.setAttribute("class","win");
+        Desactivate.buttons();   //desactivate all letters
+        Winner.winColor();       //color all letters with green color
+        Winner.smiley();
       }
+      //}
     } 
 
     // Animate man
@@ -283,7 +283,7 @@ window.onload = () => {
       lives = 10;
       counter = 0;
       space = 0;
-      result();     //Create guesses ul and display number of letters and spaces in the correct word
+      result();     //Create guesses ul and display number of letters and spaces in the proposed word
       comments();   //display number of lives remaining
       selectCat();  //display selected category
       canvas();     //specify context of canvas
