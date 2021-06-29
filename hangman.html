@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman-js</title>
+
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="hangman.css">
+</head>
+<body>
+    <section class="container">
+      <header>
+        <h1>Abb - JavaScript Hangman Game</h1>
+        <p>Use the alphabet below to guess the word, or click hint button to get a clue.</p>
+      </header>
+      <main class="container">
+          <div id="buttons">
+          </div>  
+          <p id="categoryName"></p>
+          <div id="hold">
+          </div>
+          <p id="remainingLives"></p>
+          <p id="clue">- clue -</p>  
+          <canvas id="stickman">Your Browser does NOT support HTML5 Canvas tag</canvas>
+          <section class="container">
+            <button id="hint">Hint</button>
+            <button id="reset">Play again</button>
+          </section>
+      </main>
+    </section>    
+     
+    <script src="hangman.js"></script>
+</body>
+</html>
