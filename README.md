@@ -7,28 +7,28 @@ JAVASCRIPT HANGMAN GAME
   > Flowchart   : [flowchart](flowchart.jpg)   
   
 ## start game:
-  You don't need any prerequisites to launch the application. have fun. 
+  > You don't need any prerequisites to launch the application. have fun. 
 
 ## Author
-  Abdelilah Benghadda => Junior Developer @Becode.org
+  > Abdelilah Benghadda => Junior Developer @Becode.org
 
 ## Licence
-  No licence required
+  > No licence required
 
 ## Deployment
-  [click here to launch app and try it](https://abb-becode.github.io/hangman/)    
+  > [click here to launch app and try it](https://abb-becode.github.io/hangman/)    
     
 ## Functionalities
-  - Create buttons
-  - Attach click event to each button
-  - select category
-  - draw bodymember of hangman
-  - draw smiley
+  > - Create buttons
+  > - Attach click event to each button
+  > - select category
+  > - draw bodymember of hangman
+  > - draw smiley
 
 ## Technologies
-  HTML - SCSS - JAVASCRIPT
+  > HTML - SCSS - JAVASCRIPT
   
 ## Versioning 
-  version : 001
+  > version : 001
 
 
