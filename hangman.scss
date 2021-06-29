@@ -1,0 +1,206 @@
+/* Variabes */  
+/*$orange: #ffa600;*/
+/*$green: #c1d72e;*/
+$grey: #555554;
+/*$blue: #82d2e5;*/
+/*$grey:#f3f3f3;*/
+$white: #fff;
+$base-color:$grey ;
+
+/* Mixin's */ 
+@mixin transition {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/*@mixin clear {
+  &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+}*/
+
+ @mixin box-size {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ @mixin transition {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin fade {
+  -moz-transition: all 1s ease-in;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+@mixin opacity {
+  opacity:0.3;
+  filter: alpha(opacity=40); 
+  @include fade;
+}
+
+@mixin corners ($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius; 
+  -khtml-border-radius: $radius; 
+}
+
+/*body*/
+body {
+    background: $base-color;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    color: $white;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+
+canvas{
+  color: $white;
+  border: $white dashed 2px;
+  padding: 15px;
+}
+
+h1, h2, h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+    text-transform: uppercase;
+    margin:5px 0;
+}
+
+h1 {
+    font-size: 1.6em;
+    margin-top: 30px !important;
+}
+
+h2 {
+	font-size: 0.6em;
+}
+
+p{
+  font-size: 1em;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#alphabet {
+  display: grid;
+  grid-template-rows: 20px 20px;
+  grid-template-columns: repeat(13, 25px);
+  grid-gap: 10px;
+  padding-left: 0px;
+}
+
+#alphabet li {
+  list-style: none;
+  width: 25px;
+  height: 20px;
+  background: $white;
+  color: $base-color;
+  cursor: pointer;
+  @include corners(5px);
+  border: solid 1px $white;
+    
+    &:hover{
+      background: $base-color;
+      border: solid 1px $white;
+      color: $white;
+    }
+}
+
+#proposed-word {
+  margin: 0;
+  display: block;
+  padding: 0;
+  display:block;
+}
+
+#proposed-word li {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 1.6em;
+}
+
+.active {
+  @include opacity;
+  cursor: default;
+    
+  &:hover{
+      @include fade;
+      @include opacity;
+    }
+}
+
+#remainingLives{
+  font-size: 1em;
+  text-align: center;
+  display: block;
+}
+
+button {
+  @include corners (5px);
+  background: $base-color;
+  color: $white;
+  border: solid 1px $white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8em;
+  padding: 10px 5px;
+  width: 100px;
+  margin: 10px;
+  outline: none;
+    
+    &:hover{
+      @include transition;
+      background: $white;
+      border: solid 1px $white;
+      color: $base-color;
+    }
+}
+
+.missing {
+  color: rgb(199, 5, 5);
+}
+.win {
+  color: green;
+  font-weight: bold;
+  font-size: large;
+}
+.lose {
+  color: rgb(199, 5, 5);
+  font-weight: bold;
+  font-size: large;
+}
+
+@media (max-width: 767px) {
+  #alphabet {
+  /*padding: 0 0 0 15px;*/
+  padding: 0;
+}
+  }
+
+@media (max-width: 480px) {
+  #alphabet {
+  /*padding: 0 0 0 25px;*/
+  padding: 0;
+}
+  }
