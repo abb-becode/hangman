@@ -3,8 +3,9 @@ JAVASCRIPT HANGMAN GAME
 
 ## General informations: 
   Title       : hangman game    
-  Description : a small application to play hangman 
-
+  Description : a small application to play hangman   
+  Flowchart   : (flowchart.jpg)
+  
 ## start game:
   You don't need any prerequisites to launch the application. have fun. 
 
@@ -15,6 +16,19 @@ JAVASCRIPT HANGMAN GAME
   No licence required
 
 ## Deployment
-  [click here to launch app and try it](https://abb-becode.github.io/hangman/) 
+  [click here to launch app and try it](https://abb-becode.github.io/hangman/)    
+    
+## Functionalities
+  - Create buttons
+  - Attach click event to each button
+  - select category
+  - draw bodymember of hangman
+  - draw smiley
+
+## Technologies
+  HTML - SCSS - JAVASCRIPT
+  
+## Versioning 
+  version : 001
 
 
