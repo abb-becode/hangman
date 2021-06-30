@@ -5,7 +5,7 @@ JAVASCRIPT HANGMAN GAME
   > Title       : hangman game    
   > Description : a small application to play hangman   
   > Flowchart   : [flowchart](hangman-flowchart.png)     
-  > ### Checking:
+  > ##### Checking:
   > - lighthouse : ok
   > - w3c validator : ok   
   
