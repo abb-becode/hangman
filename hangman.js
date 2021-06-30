@@ -107,7 +107,7 @@ window.onload = () => {
       }
     }   
     
-    // Select Catagory
+    // Select Category
     selectCat = () => {
       if (chosenCategory === categories[0]) {
         categoryName.innerHTML = "The Chosen Category is Avengers characters";
@@ -168,7 +168,7 @@ window.onload = () => {
       //}
     } 
 
-    // Animate man
+    // Animate hangman
     var animate = () => {
       var bodyMember = lives ;     // get a body member of hangman to draw it (= remaining lives)
       drawFunctions[bodyMember](); // call function corresponding to element in the drawFunctions array
@@ -233,7 +233,7 @@ window.onload = () => {
        draw (60, 70, 20, 100);
     };
     
-    drawFunctions = [rightLeg, leftLeg, rightArm, leftArm,  torso,  head, gallowsPart4, gallowsPart3, gallowsPart2, gallowsPart1]; 
+    drawFunctions = [rightLeg, leftLeg, rightArm, leftArm, torso, head, gallowsPart4, gallowsPart3, gallowsPart2, gallowsPart1]; 
     
 
     // Attach onclick event for each letter
