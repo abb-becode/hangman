@@ -5,6 +5,9 @@ JAVASCRIPT HANGMAN GAME
   > Title       : hangman game    
   > Description : a small application to play hangman   
   > Flowchart   : [flowchart](hangman-flowchart.png)   
+  > Checking:
+    >> lighthouse    : OK
+    >> w3c validator : OK 
   
 ## Start game
   > You don't need any prerequisites to launch the application. have fun. 
@@ -29,6 +32,6 @@ JAVASCRIPT HANGMAN GAME
   > HTML - SCSS - JAVASCRIPT
   
 ## Versioning 
-  > version : 001
+  > version : V-001  
 
 
