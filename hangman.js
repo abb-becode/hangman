@@ -94,9 +94,10 @@ window.onload = () => {
     buttons = () => {
       gameButtons = document.getElementById('buttons');
       letters = document.createElement('ul');
-  
+      letters.id = 'alphabet';
+
       for (var i = 0; i < alphabet.length; i++) {
-        letters.id = 'alphabet';
+        //letters.id = 'alphabet';
         list = document.createElement('li');
         list.id = 'letter';
         list.innerHTML = alphabet[i];
@@ -121,9 +122,11 @@ window.onload = () => {
     result = () => {
       wordHolder = document.getElementById('hold');
       proposedWord = document.createElement('ul');
-  
+      //proposedWord.setAttribute('id', 'proposed-word');
+      proposedWord.id = 'proposed-word';
+
       for (var i = 0; i < word.length; i++) {
-        proposedWord.setAttribute('id', 'proposed-word');
+        //proposedWord.setAttribute('id', 'proposed-word');
         guess = document.createElement('li');
         guess.setAttribute('class', 'guess');
         if (word[i] === "-") {
@@ -151,7 +154,7 @@ window.onload = () => {
         //showLives.setAttribute("class","lose");
         Desactivate.buttons();            //desactivate all letters
         Desactivate.showMissingLetters(); //show missing letters in another color in the result
-        Loser.smiley();
+        Loser.smiley();                   //draw sad smiley
       }
       //for (var i = 0; i < guesses.length; i++) {
       if (counter + space === guesses.length) {
@@ -160,7 +163,7 @@ window.onload = () => {
         showLives.setAttribute("class","win");
         Desactivate.buttons();   //desactivate all letters
         Winner.winColor();       //color all letters with green color
-        Winner.smiley();
+        Winner.smiley();         //draw funny smiley
       }
       //}
     } 
@@ -277,12 +280,11 @@ window.onload = () => {
       word = word.replace(/\s/g, "-");
       //console.log(word);
 
-      //add buttons: each letter is a button
-      buttons();
-      guesses = [];
-      lives = 10;
-      counter = 0;
-      space = 0;
+      buttons();    //add buttons: each letter is a button
+      guesses = []; //array when stored guesses letters
+      lives = 10;   //10 chances to found guesses word
+      counter = 0;  //count numbers of founded good letters
+      space = 0;    //count number of space in the word to found
       result();     //Create guesses ul and display number of letters and spaces in the proposed word
       comments();   //display number of lives remaining
       selectCat();  //display selected category
